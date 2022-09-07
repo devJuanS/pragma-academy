@@ -57,6 +57,7 @@ header {
 /* ++++ MAIN ++++ */
 main {
     /* Box model */
+    min-height: 540px;
     height: calc(100vh - 40px - 30vh);
     display: flex;
     flex-direction: column;
@@ -149,3 +150,59 @@ main {
 }
 
 /* ++++ FOOTER ++++ */
+
+footer {
+    /* Box model */
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Visualization */
+    background-color: white;
+}
+
+.pokemon-grid {
+    /* Box model */
+    width: 192px;
+    height: 192px;
+    flex-flow: column wrap;
+}
+
+.pokemon-character {
+    /* Box model */
+    width: 52px;
+    height: 52px;
+    margin: 20px;
+    display: inline-block;
+    /* Visualization */
+    border-radius: 8px;
+    background-color: var(--main-background);
+}
+
+.pokemon-character__figure {
+    /* Box model */
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    /* Others */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pokemon-character__figure--url-1 {
+    background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png');
+}
+
+.pokemon-character__figure--url-2 {
+    background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png');
+}
+
+.pokemon-character__figure--url-3 {
+    background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png');
+}
+
+.pokemon-character__figure--url-4 {
+    background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png');
+}
