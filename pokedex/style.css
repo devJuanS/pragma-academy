@@ -57,8 +57,8 @@ header {
 /* ++++ MAIN ++++ */
 main {
     /* Box model */
-    min-height: 540px;
-    height: calc(100vh - 40px - 30vh);
+    min-height: 440px;
+    height: calc(100vh - 40px - (2rem + 178px)); /* 100vh - header - footer*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,10 +74,9 @@ main {
 }
 .pokemon__title {
     /* Box model */
-    max-width: 300px;
-    width: 80vw;
+    width: 256px;
     height: 40px;
-    margin: 16px auto;
+    margin: 16px auto 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,10 +107,10 @@ main {
 
 .pokemon__image {
     /* Box model */
-    max-width: 300px;
+    /*max-width: 300px;*/
     max-height: 300px;
-    width: 72vw;
-    height: 72vw;
+    width: 85%;
+    height: 68vw;
     justify-self: center;
     /* Others */
     background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png');
@@ -128,11 +127,10 @@ main {
 .ability-info div {
     /* Position */
     position: absolute;
-    left: calc(-80vw / 2);
+    left: -130px;
     top: -80px;
     /* Box model */
-    max-width: 300px;
-    width: 80vw;
+    width: 260px;
     padding: 76px 32px 20px;
     /* Visualtization */
     background-color: white;
@@ -153,7 +151,7 @@ main {
 
 footer {
     /* Box model */
-    height: 30vh;
+    height: calc(2rem + 176px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,10 +160,14 @@ footer {
     background-color: white;
 }
 
+.footer__title {
+    margin: 12px auto 12px;
+    line-height: 2.0rem;
+}
 .pokemon-grid {
     /* Box model */
     width: 192px;
-    height: 192px;
+    margin: 0 auto 0;
     flex-flow: column wrap;
 }
 
@@ -173,7 +175,7 @@ footer {
     /* Box model */
     width: 52px;
     height: 52px;
-    margin: 20px;
+    margin: 0 20px 12px;
     display: inline-block;
     /* Visualization */
     border-radius: 8px;
