@@ -48,35 +48,32 @@ header {
     width: 24px;
     height: 24px;
     /* Others */
-    background-image: url('images/pokemon-ball.svg');
+    background-image: url('./assets/img/pokemon-ball.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 /* ++++ MAIN ++++ */
-main {
+.pokemon-main {
     /* Box model */
-    min-height: 440px;
-    height: calc(100vh - 40px - (2rem + 178px)); /* 100vh - header - footer*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-content: center;
     /* Visualization */
     background-color: var(--main-background);
 }
 
-.pokemon {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.pokemon-container {
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 40px 160px 280px;
 }
+
 .pokemon__title {
     /* Box model */
     width: 256px;
     height: 40px;
-    margin: 16px auto 4px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,12 +82,12 @@ main {
     border-radius: 8px;
 }
 
-.pokemon__category-icon {
+.pokemon__type-icon {
     /* Box model */
     width: 24px;
     height: 24px;
     /* Others */
-    background-image: url('images/fire.svg');
+    background-image: url('./assets/img/fire.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,39 +103,32 @@ main {
 }
 
 .pokemon__image {
+    /* Position */
+    position: relative;
+    z-index: 1;
     /* Box model */
-    /*max-width: 300px;*/
-    max-height: 300px;
-    width: 85%;
-    height: 68vw;
+    width: 240px;
+    height: 240px;
     justify-self: center;
     /* Others */
-    background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png');
+    background-image: url('./assets/img/006-charizard.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.ability-info {
-    /* Position */
-    position: relative;
-}
-
-.ability-info div {
-    /* Position */
-    position: absolute;
-    left: -130px;
-    top: -80px;
+.pokemon__ability {
     /* Box model */
     width: 260px;
-    padding: 76px 32px 20px;
+    height: fit-content;
+    padding: 40px 32px 20px;
     /* Visualtization */
     background-color: white;
     border-radius: 8px;
 }
 
 .attribute {
-    margin: 12px auto;
+    margin: 16px auto;
     display: flex;
     justify-content: space-between;
 }
