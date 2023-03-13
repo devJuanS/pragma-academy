@@ -177,6 +177,12 @@ footer {
     background-repeat: no-repeat;
 }
 
+.pokemon-character:hover {
+    background-color: #717273;
+    box-shadow: 4px 4px 4px rgba(187, 185, 185, .75);
+    cursor: pointer;
+}
+
 .pokemon-character__figure--url-1 {
     background-image: url('./assets/img/001-bulbasaur.png');
 }
@@ -201,6 +207,10 @@ footer {
 }
 
 @media (min-width: 620px ) {
+    header {
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
 
     .pokemon-container {
         position: relative;
@@ -264,7 +274,7 @@ footer {
         border: 1px solid rgb(55, 55, 55);
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 4px 4px 4px #bbb9b96e;
+        box-shadow: 4px 4px 4px rgba(187, 185, 185, .50);
     }
     .pokemon-main {
         padding: 0 10vw;
