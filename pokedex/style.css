@@ -178,22 +178,23 @@ footer {
 }
 
 .pokemon-character__figure--url-1 {
-    background-image: url('./assets/img/006-charizard.png');
+    background-image: url('./assets/img/001-bulbasaur.png');
 }
 
 .pokemon-character__figure--url-2 {
-    background-image: url('./assets/img/006-charizard.png');
+    background-image: url('./assets/img/007-squirtle.png');
 }
 
 .pokemon-character__figure--url-3 {
-    background-image: url('./assets/img/006-charizard.png');
+    background-image: url('./assets/img/009-blastoise.png');
 }
 
 .pokemon-character__figure--url-4 {
-    background-image: url('./assets/img/006-charizard.png');
+    background-image: url('./assets/img/025-pikachu.png');
 }
+  
 
-@media (min-width: 620px) {
+@media (min-width: 620px ) {
     .pokemon-main {
         height: calc(100vh - 40px - 100px);
         max-height: 480px;
